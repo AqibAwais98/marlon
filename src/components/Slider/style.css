@@ -1,0 +1,12 @@
+.slick-prev:before,
+.slick-next:before {
+  color: #002d72;
+}
+/* .slick-slide {
+  margin: 0 20px;
+} */
+.slick-track{
+  width: fit-content;
+  display: flex;
+  gap: 44px;
+}
