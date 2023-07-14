@@ -13,10 +13,11 @@ module.exports = {
         feature: "url('../src/assets/img/feature_bg_image.png')",
         circles: "url('../src/assets/img/circles.png')",
         contact: "url('../src/assets/img/contact_image.png')",
+        contact2: "url('../src/assets/img/wearing_gloves.png')",
       },
-      backgroundPosition:{
-        'right-center': 'right center',
-      }
+      backgroundPosition: {
+        "right-center": "right center",
+      },
     },
   },
   plugins: [],

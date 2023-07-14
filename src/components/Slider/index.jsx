@@ -11,7 +11,7 @@ function CustomSlider() {
     infinite: true,
     speed: 500,
     slidesToShow: 4,
-    slidesToScroll: 1,
+    slidesToScroll: 2,
     // centerMode:true,
     // centerPadding: '100px',
     responsive: [
@@ -19,19 +19,19 @@ function CustomSlider() {
         breakpoint: 1350,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 1,
+          slidesToScroll: 2,
           infinite: true,
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 880,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 680,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,

@@ -7,11 +7,13 @@ function FeaturedProductCard({ img, desc, name }) {
       <span className="flex absolute top-4 right-5 text-sm">
         <img src={fireIcon} className="h-full" /> Hot
       </span>
-      <img
-        src={img}
-        alt="product Image"
-        className="mx-auto hover:-translate-y-6  transition-all duration-500"
-      />
+      <span>
+        <img
+          src={img}
+          alt="product Image"
+          className="mx-auto hover:-translate-y-6  transition-all duration-500"
+        />
+      </span>
       <h3 className="text-[#002d72] font-bold text-xl">{name}</h3>
       <p>{desc}</p>
     </div>

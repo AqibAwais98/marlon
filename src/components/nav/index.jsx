@@ -20,7 +20,7 @@ function Nav() {
   return (
     <div className="flex justify-between items-center container mx-auto pt-8">
       <Logo />
-      <ul className="sm:hidden lg:flex items-center md:gap-4 xl:gap-[38px] text-[#fff] font-semibold">
+      <ul className="hidden lg:flex items-center md:gap-4 xl:gap-[38px] text-[#fff] font-semibold">
         <li>Solutions</li>
         <li className="flex gap-1 relative group">
           Product{" "}

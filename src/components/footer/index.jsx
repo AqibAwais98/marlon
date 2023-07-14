@@ -11,7 +11,7 @@ import { quickLinks, products } from "./data";
 function Footer() {
   return (
     <footer className="bg-[#002d72]">
-      <div className="grid grid-cols-3 gap-20 place-content-center px-[120px] py-16 text-white container mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-20 place-content-center py-16 text-white container mx-auto px-4">
         <div className="">
           <Logo />
           <p className="my-6 ">

@@ -3,6 +3,10 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@300;400;500;600;700;800&display=swap");
 
+* {
+  /* background-color: cadetblue; */
+  /* border: 1px solid red; */
+}
 body {
   margin: 0;
   padding: 0;
