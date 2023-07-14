@@ -5,6 +5,8 @@ import "slick-carousel/slick/slick-theme.css";
 import { productsData } from "../productCard/data";
 import ProductCard from "../productCard";
 import "../Slider/style.css";
+import rightArrowIcon from "../../assets/svg/slider_right_arrow.svg";
+import leftArrowIcon from "../../assets/svg/slider_left_arrow.svg";
 
 function CustomSlider() {
   var settings = {
@@ -12,6 +14,8 @@ function CustomSlider() {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 2,
+    nextArrow: <img src={rightArrowIcon} />,
+    prevArrow: <img src={leftArrowIcon} />,
     // centerMode:true,
     // centerPadding: '100px',
     responsive: [
@@ -54,5 +58,9 @@ function CustomSlider() {
     </div>
   );
 }
+
+const rightArrow = () => {
+  return <img src={rightArrowIcon} />;
+};
 
 export default CustomSlider;

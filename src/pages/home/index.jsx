@@ -51,7 +51,7 @@ function Home() {
             <h2 className="text-[#002D72] text-3xl lg:text-4xl font-semibold">
               A reliable glove manufacturer for all sectors
             </h2>
-            <Button text="See all products" variant="bg-[#002D72] text-white ">
+            <Button text="See All Products" variant="bg-[#002D72] text-white ">
               <img src={rightArrowWhite} alt="arrow" />
             </Button>
           </div>
@@ -61,7 +61,6 @@ function Home() {
       <section className="bg-promise bg-cover bg-no-repeat grid grid-cols-1 xl:grid-cols-2 bg-slate-400 pt-24 ">
         <div className="container">
           <div className=" bg-white rounded-tr-[170px] py-[52px] px-8 lg:px-24">
-            {/* <> */}
             <h2 className="text-[#002D72] font-semibold text-3xl xl:text-5xl leading-[40px] lg:leading-[60px] mb-[19px]">
               We have Promised to <br /> Guard your Hands
             </h2>
@@ -98,11 +97,8 @@ function Home() {
             <Button text="Learn More" variant="bg-[#002D72] text-white">
               <img src={rightArrowWhite} alt="arrow icon" />
             </Button>
-            {/* </> */}
           </div>
         </div>
-
-        {/* <img src={sparksImg} alt="sparks image" className="absolute -bottom-36 right-10 rotate-45" /> */}
       </section>
       <section className="bg-feature bg-cover px-4 pt-[36px] pb-[60px] text-center  ">
         <div className=" text-white ">
@@ -126,16 +122,11 @@ function Home() {
           <img src={rightArrow} alt="right icon" />
         </Button>
       </section>
-      {/* <section>
-        <h2 className="text-5xl text-[#002d72] font-semibold">
-          Latest Articles
-        </h2>
-      </section> */}
       <section>
-        <div className="container mx-auto ">
-          <div className="grid grid-cols-1 lg:grid-cols-2 h-[90vh] mx-4">
+        <div className="container mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 mx-4">
             <div className="bg-circles bg-contain bg-no-repeat bg-center flex justify-center items-center ">
-              <div className="max-w-[400px] rounded-[20px] shadow-[0_23px_147px_6px_rgba(64,71,95,0.25)]">
+              <div className="max-w-[400px] rounded-[20px] shadow-[0_23px_147px_6px_rgba(64,71,95,0.25)] my-28">
                 <p className="py-6 px-9 bg-white text-[28px] font-bold text-[#002D72] overflow-hidden rounded-t-[20px]">
                   Mission Statement
                 </p>
@@ -219,9 +210,6 @@ function Home() {
               </div>
             </div>
           </div>
-          {/* <div className="">
-            <img src={contactImg} alt="image" />
-          </div> */}
         </div>
       </section>
       <Footer />
