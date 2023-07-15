@@ -46,7 +46,7 @@ function CustomSlider() {
   };
   return (
     <div>
-      <Slider {...settings} className="bg-slate-500">
+      <Slider {...settings}>
         {productsData.map((product) => (
           <ProductCard
             title={product.title}
