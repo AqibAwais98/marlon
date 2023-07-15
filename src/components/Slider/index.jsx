@@ -10,14 +10,15 @@ import leftArrowIcon from "../../assets/svg/slider_left_arrow.svg";
 
 function CustomSlider() {
   var settings = {
-    infinite: true,
+    infinite: false,
+    // infinite: true,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 2,
     nextArrow: <img src={rightArrowIcon} />,
     prevArrow: <img src={leftArrowIcon} />,
     // centerMode:true,
-    // centerPadding: '100px',
+    // centerPadding: '10px',
     responsive: [
       {
         breakpoint: 1350,
@@ -45,7 +46,7 @@ function CustomSlider() {
   };
   return (
     <div>
-      <Slider {...settings}>
+      <Slider {...settings} className="bg-slate-500">
         {productsData.map((product) => (
           <ProductCard
             title={product.title}
@@ -59,8 +60,5 @@ function CustomSlider() {
   );
 }
 
-const rightArrow = () => {
-  return <img src={rightArrowIcon} />;
-};
 
 export default CustomSlider;

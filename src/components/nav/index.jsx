@@ -19,7 +19,7 @@ function Nav() {
   ];
   const [showMenu, setShowMenu] = useState(false);
   return (
-    <div className="flex justify-between items-center container mx-auto pt-8">
+    <div className="flex justify-between items-center container mx-auto pt-5">
       <Logo />
       <ul className="hidden lg:flex items-center md:gap-4 xl:gap-[38px] text-[#fff] font-semibold">
         <li>
@@ -76,7 +76,7 @@ function Nav() {
           <Link to="#">About us</Link>
         </li>
         <li>
-          <Button text="Contact us" variant="text-[#002D72] bg-white">
+          <Button text="Contact us" variant="text-[#002D72] px-6 pt-[7px] pb-1 bg-white gap-2  rounded">
             <img src={rightArrow} />
             {/* <AiOutlineRightCircle  /> */}
           </Button>

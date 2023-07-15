@@ -1,15 +1,12 @@
 import React from "react";
 import Nav from "../../components/nav";
-import heroImg from "../../assets/img/hero-section-img.png";
 import Button from "../../components/button";
 import okIcon from "../../assets/svg/ok_icon.svg";
 import rightArrowWhite from "../../assets/svg/arrow_right_white.svg";
 import { featuredProducts } from "../../components/featuredProductCard/data";
 import FeaturedProductCard from "../../components/featuredProductCard";
 import rightArrow from "../../assets/svg/right_arrow.svg";
-import contactImg from "../../assets/img/wearing_gloves.png";
-import sparksImg from "../../assets/img/sparks.png";
-
+import rightArrow2 from "../../assets/svg/right_arrow2.svg";
 import ArticleCard from "../../components/articleCard";
 import {
   articleMessage,
@@ -17,90 +14,99 @@ import {
 } from "../../components/articleCard/data";
 import Footer from "../../components/footer";
 import CustomSlider from "../../components/Slider";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
     <div>
       <section className="bg-hero bg-repeat-x">
         <Nav />
-        <div className="grid grid-cols-1 lg:grid-cols-5">
-          <div className="col-span-1 lg:col-span-3 flex justify-center items-center my-14 lg:my-0">
-            <div className="max-w-[667px] mx-8">
-              <h1 className="text-2xl lg:text-5xl text-white/90 font-bold leading-[30px] lg:leading-[62px]">
-                A medical supply company, manufacturer and distributor
-                <br />
-                <span className="font-normal">
-                  bringing you clinical and supply chain expertise
-                </span>
-              </h1>
-              <a href="#" className="mt-10 text-lg text-white/70 underline">
-                See who we serve
-              </a>
+        <div className="bg-hero2 bg-no-repeat bg-right-bottom">
+          <div className="container mx-auto pt-36 pb-48">
+            <div className="flex items-center my-14 lg:my-0">
+              <div className="max-w-[667px] ">
+                <h1 className="text-2xl lg:text-5xl text-white/90 font-bold leading-[30px] lg:leading-[62px]">
+                  A medical supply company, manufacturer and distributor
+                  <br />
+                  <span className="font-normal">
+                    bringing you clinical and supply chain expertise
+                  </span>
+                </h1>
+                <Link
+                  href="#"
+                  className="mt-10 text-lg text-white/70 underline"
+                >
+                  See who we serve
+                </Link>
+              </div>
             </div>
           </div>
-          <img
-            src={heroImg}
-            alt="Image"
-            className="justify-self-end col-span-1 hidden lg:block lg:col-span-2"
-          />
         </div>
       </section>
-      <section className="py-[52px] max-w-[1284px] mx-auto">
-        <div className="mx-10">
+      <section className="pt-[52px] pb-[90px] container mx-auto px-4">
+        <div className="">
           <div className="flex flex-wrap justify-between mb-12">
-            <h2 className="text-[#002D72] text-3xl lg:text-4xl font-semibold">
+            <h2 className="text-[#002D72] text-3xl lg:text-4xl font-semibold  ">
               A reliable glove manufacturer for all sectors
             </h2>
-            <Button text="See All Products" variant="bg-[#002D72] text-white ">
+            <Button
+              text="See All Products"
+              variant="bg-[#002D72] text-white py-[12px] pl-[18px] pr-[21px] gap-2 rounded-[10px] text-lg"
+            >
               <img src={rightArrowWhite} alt="arrow" />
             </Button>
           </div>
           <CustomSlider />
         </div>
       </section>
-      <section className="bg-promise bg-cover bg-no-repeat grid grid-cols-1 xl:grid-cols-2 bg-slate-400 pt-24 ">
-        <div className="container">
-          <div className=" bg-white rounded-tr-[170px] py-[52px] px-8 lg:px-24">
-            <h2 className="text-[#002D72] font-semibold text-3xl xl:text-5xl leading-[40px] lg:leading-[60px] mb-[19px]">
-              We have Promised to <br /> Guard your Hands
-            </h2>
-            <p className="text-lg mb-[44px]">
-              Our gloves provide unparalleled protection and comfort for every
-              use, backed by stringent quality control measures and
-              industry-leading manufacturing processes
-            </p>
-            <p className="text-2xl mb-[12px] font-medium relative">
-              <span className="before:w-[85px] before:h-[2px] before:bg-[#00D1FF] before:absolute before:-bottom-1 before:rounded">
-                Whether{" "}
-              </span>
-              it's industrial, medical, or sports-related
-            </p>
-            <ul className="text-lg text-[#333] mb-[22px]">
-              <li className="flex items-center gap-[12px]">
-                <img src={okIcon} alt="icon" />
-                Unparalleled protection and comfort for every use
-              </li>
-              <li className="flex items-center gap-[12px]">
-                <img src={okIcon} alt="icon" />
-                Wide variety of materials, colors, and sizes to choose from
-              </li>
-              <li className="flex items-center gap-[12px]">
-                <img src={okIcon} alt="icon" />
-                Perfect fit for every need, whether it's industrial, medical, or
-                sports-related
-              </li>
-              <li className="flex items-center gap-[12px]">
-                <img src={okIcon} alt="icon" />
-                Performance you can count on and protection you can trust
-              </li>
-            </ul>
-            <Button text="Learn More" variant="bg-[#002D72] text-white">
-              <img src={rightArrowWhite} alt="arrow icon" />
-            </Button>
+      <section className="bg-hand-guard bg-cover bg-no-repeat bg-slate-400 pt-24 ">
+        <div className="relative">
+          <div className="container mx-auto before:w-[50%] before:h-full before:bg-[#fff] before:absolute before:left-0 before:rounded-tr-[170px]">
+            <div className=" bg-white/50 py-[52px] w-[50%] relative z-50 rounded-tr-[170px]">
+              <h2 className="text-[#002D72] font-semibold text-3xl xl:text-5xl leading-[40px] lg:leading-[60px] mb-[19px]">
+                We have Promised to <br /> Guard your Hands
+              </h2>
+              <p className="text-lg mb-[44px]">
+                Our gloves provide unparalleled protection and comfort for every
+                use, backed by stringent quality control measures and
+                industry-leading manufacturing processes
+              </p>
+              <p className="text-2xl mb-[12px] font-medium relative">
+                <span className="before:w-[85px] before:h-[2px] before:bg-[#00D1FF] before:absolute before:-bottom-1 before:rounded">
+                  Whether{" "}
+                </span>
+                it's industrial, medical, or sports-related
+              </p>
+              <ul className="text-lg text-[#333] mb-[22px]">
+                <li className="flex items-center gap-[12px]">
+                  <img src={okIcon} alt="icon" />
+                  Unparalleled protection and comfort for every use
+                </li>
+                <li className="flex items-center gap-[12px]">
+                  <img src={okIcon} alt="icon" />
+                  Wide variety of materials, colors, and sizes to choose from
+                </li>
+                <li className="flex items-center gap-[12px]">
+                  <img src={okIcon} alt="icon" />
+                  Perfect fit for every need, whether it's industrial, medical,
+                  or sports-related
+                </li>
+                <li className="flex items-center gap-[12px] ">
+                  <img src={okIcon} alt="icon" />
+                  Performance you can count on and protection you can trust
+                </li>
+              </ul>
+              <Button
+                text="Learn More"
+                variant="bg-[#002D72] text-white pt-[12px] pb-[7px] pl-[18px] pr-[21px] gap-9 rounded-[10px] text-lg"
+              >
+                <img src={rightArrowWhite} alt="arrow icon" />
+              </Button>
+            </div>
           </div>
         </div>
       </section>
-      <section className="bg-feature bg-cover px-4 pt-[36px] pb-[60px] text-center  ">
+      <section className="bg-feature bg-cover pt-[36px] pb-[60px] text-center">
         <div className=" text-white ">
           <h2 className="text-[42px] font-semibold">Our Featured Products</h2>
           <p className="text-lg mb-20">
@@ -109,7 +115,7 @@ function Home() {
             Quisque aliquam duis dui aliquet pretium.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 lg:gap-6 xl:gap-[107px] container mx-auto mb-[57px]">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 lg:gap-6 xl:gap-[107px] container px-4 mx-auto mb-[57px]">
           {featuredProducts.map((product) => (
             <FeaturedProductCard
               img={product.productImg}
@@ -118,7 +124,10 @@ function Home() {
             />
           ))}
         </div>
-        <Button text={"See All Products"} variant="text-[#002d72] bg-white">
+        <Button
+          text={"See All Products"}
+          variant="text-[#002d72] bg-white gap-2 font-semibold px-6 pt-[7px] pb-1 rounded"
+        >
           <img src={rightArrow} alt="right icon" />
         </Button>
       </section>
@@ -157,9 +166,9 @@ function Home() {
                   maintaining integrity in our business practices and creating a
                   safe and fulfilling work environment for our employees.
                 </p>
-                <a href="#" className="underline text-[#002D72]">
+                <Link href="#" className="underline text-[#002D72]">
                   Learn more
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -201,11 +210,17 @@ function Home() {
                 convallis viverra id risus. Diam vitae consequat.
               </p>
               <div className="flex gap-5">
-                <Button text="Contact us" variant="text-[#002D72] bg-white">
+                <Button
+                  text="Contact us"
+                  variant="text-[#002D72] bg-white font-semibold gap-2 px-6 pt-[7px] pb-1 rounded"
+                >
                   <img src={rightArrow} alt="arrow icon" />
                 </Button>
-                <Button text="Products" variant="bg-[#002D72] text-white">
-                  <img src={rightArrowWhite} alt="arrow icon" />
+                <Button
+                  text="Products"
+                  variant="bg-[#002D72] text-white font-semibold px-6 pt-[7px] pb-1 gap-[19px] rounded"
+                >
+                  <img src={rightArrow2} alt="arrow icon" />
                 </Button>
               </div>
             </div>

@@ -11,10 +11,10 @@ import { quickLinks, products } from "./data";
 function Footer() {
   return (
     <footer className="bg-[#002d72]">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-20 place-content-center py-16 text-white container mx-auto px-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-20 place-content-center pt-16 pb-8 text-[#fff] container mx-auto px-4">
         <div className="">
           <Logo />
-          <p className="my-6 ">
+          <p className="my-6 text-sm ">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et
             tristique quam proin tellus leo semper nibh quis turpis. Quisque
             aliquam duis dui aliquet pretium.
@@ -25,7 +25,7 @@ function Footer() {
             <img src={twitterIcon} alt="twitter icon" />
           </span>
         </div>
-        <div className="flex gap-12">
+        <div className="flex gap-16">
           <div>
             <h3 className="text-2xl font-semibold mb-4">Quick Links</h3>
             <ul className="flex flex-col gap-2">
