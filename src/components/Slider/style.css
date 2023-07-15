@@ -7,30 +7,14 @@
   width: 22px;
   height: 22px;
 }
-/* .slick-prev {
-  left: -30px;
-} */
-/* .slick-slide {
-
-  margin: 0 20px;
-} */
 .slick-track {
-  /* width: fit-content; */
   display: flex;
-  /* padding-left: 20px; */
   padding-left: 6px;
-  /* justify-content: center; */
-  /* padding-right: 6px; */
-  /* justify-content: space-between; */
-  /* gap: 44px; */
+  
 }
 .slick-track > :not(:first-child) {
   margin-left: 44px;
 }
-
-/* .slick-track > :first-child {
-  margin-left: 2px;
-} */
 .slick-track > :last-child {
   margin-right: 4px;
 }
